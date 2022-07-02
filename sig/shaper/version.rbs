@@ -1,0 +1,6 @@
+module Shaper
+  VERSION: String
+
+  class Error < StandardError
+  end
+end

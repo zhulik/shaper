@@ -1,0 +1,4 @@
+module Shaper
+  class Error < StandardError
+  end
+end
