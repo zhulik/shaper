@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Gleb Sinyavskiy"]
   spec.email         = ["zhulik.gleb@gmail.com"]
 
-  spec.summary       = "Redux-style async-friendly state container."
-  spec.description   = "Redux-style async-friendly state container."
+  spec.summary       = "Redux-like async-friendly state container for ruby."
+  spec.description   = "Redux-like async-friendly state container for ruby."
   spec.homepage      = "https://github.com/zhulik/shaper"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 3.1"
