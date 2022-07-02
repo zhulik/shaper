@@ -1,9 +1,15 @@
 module Shaper
   class Container[T]
+    class UnknownEventError < Shaper::Error
+    end
+
     @state: T
+    @reducer: Shaper::Reducer[T]
 
     def initialize: (Shaper::Reducer[T] reducer) -> void
 
     def state: -> T
+
+    def dispatch: [P] (String | Symbol event_name, P payload) -> void
   end
 end
