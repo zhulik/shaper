@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+ENV["RBS_TEST_TARGET"] = "Shaper::*"
+
+require "rbs/test/setup"
+
 require "shaper"
 
 RSpec.configure do |config|

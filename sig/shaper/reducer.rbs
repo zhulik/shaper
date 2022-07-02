@@ -1,0 +1,5 @@
+module Shaper
+  module Reducer[T]
+    def initial_state: -> T
+  end
+end

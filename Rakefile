@@ -3,10 +3,17 @@
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
 
-RSpec::Core::RakeTask.new(:spec)
-
 require "rubocop/rake_task"
+require "steep"
+require "steep/cli"
+
+RSpec::Core::RakeTask.new(:spec)
 
 RuboCop::RakeTask.new
 
-task default: %i[spec rubocop]
+desc "Run steep check"
+task :steep do
+  Steep::CLI.new(argv: ["check"], stdout: $stdout, stderr: $stderr, stdin: $stdin).run
+end
+
+task default: %i[rubocop steep spec]

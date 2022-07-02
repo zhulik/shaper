@@ -1,0 +1,9 @@
+module Shaper
+  class Container[T]
+    @state: T
+
+    def initialize: (Shaper::Reducer[T] reducer) -> void
+
+    def state: -> T
+  end
+end
