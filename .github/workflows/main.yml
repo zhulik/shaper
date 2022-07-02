@@ -20,4 +20,4 @@ jobs:
         run: bundle exec steep check
 
       - name: Run rspec
-        run: bundle exec steep rspec
+        run: bundle exec rspec
